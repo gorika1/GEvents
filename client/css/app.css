@@ -1,0 +1,200 @@
+.block {
+	display: block !important;
+}
+/**************************************************************
+************************** NAVBAR *****************************
+**************************************************************/
+@media(max-width: 767px) {
+	.navbar-header {
+		background: #FFF !important;
+		color: #000;
+		height: 50px;
+	}
+
+	.navbar-header:hover .navbar-brand,
+	.navbar-header:hover .arrow {
+		color: #000 !important;
+	}
+
+	.navbar-header .navbar-brand:hover {
+		background: #FFF;
+	}
+
+	.brand {
+		display: inline-block;
+		width: 50%;
+	}
+
+	.toggle-navigation {
+		display: inline-block;
+		background: #428bca;
+		float: right;
+		height: 50px;
+		margin-top: 0;
+		width: 50%;
+	}
+	.toggle-navigation .icon-bar {
+		background-color: #FFF !important;
+	}
+}
+
+@media(max-width: 514px){
+	.brand {
+		width: 70%;
+	}
+	.toggle-navigation {
+		width: 30%;
+	}
+}
+
+@media(max-width: 373px){
+	.brand {
+		width: 80%;
+	}
+	.toggle-navigation {
+		text-align: right;
+		width: 20%;
+	}
+	.toggle-navigation .navbar-toggle {
+		padding-right: 5px;
+	}
+}
+
+
+/**************************************************************
+************************** SEARCH *****************************
+**************************************************************/
+.search-back {
+	background: #43A6DF;
+	height: 600px;
+	opacity: 1;
+	position: relative;
+}
+
+.search-back-layer {
+	background: #000;
+	height: 600px;
+	opacity: .6;
+	position: absolute;
+	width: 100%;
+}
+
+.search-form-content {
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
+
+#search-form {
+	color: #FFF;
+	display: none;
+	position: absolute;
+	text-align: center;
+	top: 50px;
+	width: 80%;
+}
+
+#search-form #logo {
+	display: block;
+	margin: auto;
+	max-height: 150px;
+}
+
+#search-form .form-control {
+	background: #FFF;
+	border-radius: 0;
+	display: inline-block;
+	color: #000;
+	font-family: 'Roboto Light', Arial, Georgia;
+	font-size: 18px;
+	height: 50px;
+	margin: .3em auto;
+	width: 60%;
+}
+
+.metro-btn.btn-xlg {
+	height: 50px;
+	margin-top: -4px;
+}
+
+@media(max-width: 900px) {
+	#search-form .form-control {
+		display: block;
+		width: 85%;
+	}
+	.metro-btn.btn-xlg {
+		margin-top: 3px;
+	}
+}
+
+@media(max-width: 500px) {
+	#search-form {
+		width: 95%;
+	}
+	#search-form .form-control {
+		width: 100%;
+	}
+}
+
+/**************************************************************
+************************* ALL EVENTS **************************
+**************************************************************/
+.all-events-content {
+	display: none;
+}
+
+.all-events-content {
+	height: 600px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.all-events {
+	height: 100%;
+	position: relative;
+	top: 50px;
+}
+
+.all-events .back-layer {
+	background: #FFF;
+	height: 100%;
+	opacity: .9;
+	position: absolute;
+	width: 100%;
+}
+
+.all-events-search-content {
+	position: relative;
+	height: 50px;
+	top: 20px;
+}
+
+.all-events .search {
+	position: absolute;
+	width: 100%;
+}
+
+.all-events .search .form-control {
+	border-radius: 0;
+	color: #000;
+	font-family: 'Roboto Light', Arial;
+	font-size: 18px;
+	margin: auto;
+	position: absolute;
+	width: 80%;
+}
+
+.all-events .close {
+	color: #000;
+	font-size: 40px;
+	position: absolute;
+	top: 0;
+	right: 3px;
+}
+
+@media (max-width: 600px) {
+	.all-events .close {
+		display: none;
+	}
+}
